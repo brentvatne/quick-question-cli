@@ -1,6 +1,6 @@
 {
   "name": "quick-question-cli",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A CLI tool for asking questions to ChatGPT using the OpenAI Node library",
   "main": "index.js",
   "scripts": {
