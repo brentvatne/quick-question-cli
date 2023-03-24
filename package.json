@@ -1,0 +1,39 @@
+{
+  "name": "quick-question-cli",
+  "version": "1.0.3",
+  "description": "A CLI tool for asking questions to ChatGPT using the OpenAI Node library",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node index.ts",
+    "build": "tsc",
+    "prepublishOnly": "npm version patch && npm run build"
+  },
+  "bin": {
+    "qq": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brentvatne/quick-question-cli.git"
+  },
+  "keywords": [
+    "chatgpt",
+    "openai",
+    "cli"
+  ],
+  "author": "Brent Vatne <brentvatne@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brentvatne/quick-question-cli/issues"
+  },
+  "homepage": "https://github.com/brentvatne/quick-question-cli#readme",
+  "dependencies": {
+    "commander": "^10.0.0",
+    "dotenv": "^16.0.3",
+    "openai": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.7",
+    "typescript": "^5.0.2",
+    "ts-node": "^10.9.1"
+  }
+}
