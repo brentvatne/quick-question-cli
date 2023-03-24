@@ -49,3 +49,27 @@ For more information and help, run the following command:
 ```bash
 qq --help
 ```
+
+## Summarize Web Page Content with --url Flag
+
+The `--url` flag allows you to ask ChatGPT to summarize the content of a web page using the `quick-question-cli` tool. Simply provide the URL of the web page, and the CLI tool will download the page, extract the title, and ask ChatGPT to provide a summary.
+
+### Usage
+
+To use the `--url` flag, run the following command:
+
+```bash
+qq --url "https://www.example.com"
+```
+
+Replace `https://www.example.com` with the URL of the web page you want to summarize.
+
+### Example
+
+For example, you can use the `--url` flag to summarize the OpenAI Wikipedia page as follows:
+
+```bash
+qq --url "https://en.wikipedia.org/wiki/OpenAI"
+```
+
+This command will ask ChatGPT to summarize the content of the OpenAI Wikipedia page. The output will be a summarized version of the page content provided by ChatGPT.
