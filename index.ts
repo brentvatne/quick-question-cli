@@ -3,7 +3,7 @@
 import { Command } from "commander";
 import { Configuration, OpenAIApi } from "openai";
 import axios from "axios";
-import cheerio from "cheerio";
+import { load as cheerioLoad } from "cheerio";
 import * as dotenv from "dotenv";
 import os from "os";
 
@@ -71,7 +71,7 @@ async function askChatGPT(question: string) {
 async function summarizeURL(url: string) {
   try {
     const response = await axios.get(url);
-    const $ = cheerio.load(response.data);
+    const $ = cheerioLoad(response.data);
     const pageTitle = $("title").text();
     const summaryQuestion = `Please summarize the content of the web page at ${url} with title "${pageTitle}"`;
 
