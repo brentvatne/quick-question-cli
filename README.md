@@ -1,5 +1,3 @@
-Apologies for the confusion. Here's the updated README for `quick-question-cli`:
-
 # Quick Question CLI
 
 `quick-question-cli` is a simple command-line tool for asking questions to ChatGPT using the OpenAI node.js library. It allows users to quickly interact with ChatGPT by providing a question directly as a command-line argument. This package was built with the guidance of GPT-4.
